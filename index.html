@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CAMP QUEST</title>
+    <link rel="stylesheet" href="st.css" />
+  </head>
+  <body>
+    <header>
+      <h1>CAMP QUEST</h1>
+    </header>
+
+    <main>
+      <!-- 敵の情報 -->
+      <section class="enemy">
+        <h2 id="enName">suraimu</h2>
+        <div id="enemyPhoto">
+          <img id="enemyPhoto" src="img/ゴーレム.jpeg" />
+        </div>
+        <div class="hp">
+          <div id="ENHP"></div>
+          <div id="EMHP">HP</div>
+          <!-- 敵のID -->
+          <!-- <div id="suraimu" src=""></div>
+          <div id="go-remu"></div>
+          <div id="maou"></div> -->
+        </div>
+      </section>
+      <!-- 　勇者の情報 -->
+      <section class="player">
+        <h2 id="plName">yuusya</h2>
+        <img src="img/勇者.jpeg" />
+
+        <div class="hp">
+          <div id="PNHP"></div>
+          <div id="PMHP"></div>
+        </div>
+      </section>
+      <!-- 戦闘BGMと戦闘ボタン -->
+      <button id="attack" class="attack">たたかう</button>
+      <!-- 戦闘BGM -->
+      <audio id="audioElement" src="sound/Tsound.mp3"></audio>
+      <!-- 戦闘効果音 -->
+      <audio id="audioBt" src="sound/BT.mp3"></audio>
+      <audio id="audioOp" src="sound/OpSound.mp3"></audio>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,63 @@
+header {
+  height: auto;
+  background-color: blanchedalmond;
+}
+
+main {
+  margin: 50px;
+  padding: 50px;
+  border-radius: 5px;
+  max-width: 1000px;
+  width: 100%;
+  height: fit-content;
+  background-color: lightblue;
+  text-align: center;
+}
+
+section.enemy {
+  background-image: url(img/haikei.png);
+  color: white;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+section.player {
+  background-image: url(img/haikei.png);
+  color: white;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+section h2 {
+  font-size: 20px;
+  text-align: center;
+}
+
+.enemy {
+  margin-bottom: 20px;
+}
+
+.hp {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.hp > div:first-of-type::after {
+  content: "/";
+  margin: 5px;
+}
+.attack {
+  margin: 50px auto 0;
+  font-size: 20px;
+  display: block;
+  justify-content: center;
+  text-align: center;
+  background-color: white;
+  color: black;
+}
+
+.attack.deactive {
+  pointer-events: none;
+  opacity: 0.5;
+}
